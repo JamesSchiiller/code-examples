@@ -38,10 +38,10 @@ public boolean is_legal(int move_in)
 		case 110:case 111:case 112:case 113:case 114:case 115:case 116:case 117:
 		case 132:case 133:case 134:case 135:case 136:case 137:case 138:case 139:
 		case 154:case 155:case 156:case 157:case 158:case 159:case 160:case 161:
-		if(m_bd.and(new BigInteger("1").shiftLeft(move_in+DeduceConstants.BOTTOM_LEFT)).compareTo(new BigInteger("0")) == 0)
-		{
-			is_legal=true;
-		} // If player's move not being attacked in mid board
+			if(m_bd.and(new BigInteger("1").shiftLeft(move_in+DeduceConstants.BOTTOM_LEFT)).compareTo(new BigInteger("0")) == 0)
+			{
+				is_legal=true;
+			} // If player's move not being attacked in mid board
 		default: // Do nothing
 	}
   
